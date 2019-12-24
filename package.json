@@ -19,7 +19,7 @@
         "hbs": "^4.0.3",
         "memorystore": "^1.6.1",
         "mongodb": "^3.2.3",
-        "mongoose": "^5.5.4",
+        "mongoose": "^5.7.5",
         "nodemailer": "^6.1.1",
         "nodemon": "^1.18.10",
         "yargs": "^13.2.2"
