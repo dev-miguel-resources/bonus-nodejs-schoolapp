@@ -1,11 +1,6 @@
-#cto-node-js-ufps.herokuapp.com/
 
 ## Instalación en local
- 
- Prerequisito: Instalar nodeJS, npm, MongoDB y MongoDB Compass (de preferencia).
- 
- 1. Clonar proyecto de este repositorio
- 
+  
  2. Para importar base de datos (desde MongoDB con Robo 3T)
     - Hacer *New Connection* (**Hostname:** localhost, **Port:** 27017)
     - Hacer *Create Database* (proyecto-node)
