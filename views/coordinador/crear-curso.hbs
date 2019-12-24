@@ -1,0 +1,68 @@
+{{>header}}
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a href="/" class="nav-link" href="#">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a href="/crear-curso" class="nav-link" href="#">Crear Curso</a>
+    </li>
+    <li class="nav-item">
+      <a href="/ver-cursos" class="nav-link" href="#" >Ver todos los cursos</a>
+    </li>
+    <li class="nav-item">
+      <a href="/inscritos" class="nav-link" href="#">Ver Inscritos</a>
+    </li>
+    <li class="nav-item">
+      <a href="/cambiar-rol" class="nav-link" href="#">Cambiar Roles</a>
+    </li>
+    <li class="nav-item">
+      <a href="/cerrar" class="nav-link" href="#">Cerrar sesión</a>
+    </li>
+  </ul>
+
+</nav>
+
+{{#if success}}
+<p><div class="alert alert-success" role="alert"> {{success}}</div></p>
+{{/if}}
+
+{{#if error}}
+<p><div class="alert alert-danger" role="alert"> {{error}}</div></p>
+{{/if}}
+
+
+<div class="design" style="text-align: center">
+  <h2>REGISTRAR UN NUEVO CURSO</h2>
+  <p><i>Al registrar un nuevo curso, éste pasará a ser disponible y los estudiantes se podrán registrar</i></p> <br>
+  <form action="/registrar-curso" method="post">
+    <label>Id del Curso</label>
+    <input class="form-control" type="text" name="id_curso" placeholder="0" required>
+    <br>
+    <label>Nombre del Curso</label>
+    <input class="form-control" type="text" name="nombre" placeholder="nuevo" required>
+    <br>
+    <label>Valor del Curso</label>
+    <input class="form-control" type="text" name="valor" placeholder="10000" required>
+    <br>
+    <label>Descripción del Curso</label> <br>
+    <textarea name="descripcion" cols=50 rows=6>Breve descripción del curso</textarea>
+    <br>
+    <label>Modalidad del Curso</label>
+    <input class="form-control" type="text" name="modalidad" required>
+    <br>
+    <label>Intensidad (Número de horas totales)</label>
+    <input class="form-control" type="text" name="intensidad" placeholder="0" required>
+    <br>
+    <button class="btn btn-dark" >Registrarse</button>
+  </form>
+</div>
+
+
+
+
+
+{{>footer}}

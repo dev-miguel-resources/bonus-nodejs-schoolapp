@@ -1,0 +1,48 @@
+{{>header}}
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a href="/" class="nav-link" href="#">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a href="/ver-cursos" class="nav-link" href="#" >Ver cursos</a>
+    </li>
+    <li class="nav-item">
+      <a href="/registrarse" class="nav-link" href="#">Registrarse</a>
+    </li>
+  </ul>
+
+</nav>
+
+
+<div class="design" style="text-align: center">
+  <h2>REGISTRARSE</h2>
+  <form action="/registrar-user" method="post">
+    <label>Ingrese documento de identidad</label>
+    <input class="form-control" type="text" name="documento" placeholder=12345 required>
+    <br>
+    <label>Ingrese correo</label>
+    <input class="form-control" type="email" name="correo" placeholder="correo@correo.com" required>
+    <br>
+    <label>Ingrese Nombre</label>
+    <input class="form-control" type="text" name="nombre" placeholder="Pepito Perez" required>
+    <br>
+    <label>Ingrese Teléfono</label>
+    <input class="form-control" type="text" name="telefono" placeholder="312457854" required>
+    <br>
+    <label>Ingrese Contraseña</label>
+    <input class="form-control" type="text" name="contra"required>
+    <label>Recibirás un correo con la confirmación de tu registro</label>
+    <br>
+    <button class="btn btn-dark" >Registrarse</button>
+  </form>
+</div>
+
+
+
+
+
+{{>footer}}

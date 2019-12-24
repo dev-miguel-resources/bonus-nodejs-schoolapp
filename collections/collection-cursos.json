@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5cb605b197ab0b23a8958d0a"},"id":"3","nombre":"s","valor":"1","descripcion":"Breve descripción del curso","modalidad":"1","intensidad":"123","estado":"cancelado","__v":{"$numberInt":"0"},"docente_encargado_nombre":"eliana llanes"}
+{"_id":{"$oid":"5cc659a8b373f638a8849e8b"},"id":"15","nombre":"fundamentos de la algoritmia","valor":"0","descripcion":"sorting, estructuras, algoritmos, complejidad","modalidad":"virtual","intensidad":"12","estado":"cancelado","docente_encargado_nombre":"eliana llanes","__v":{"$numberInt":"0"}}
